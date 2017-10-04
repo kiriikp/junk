@@ -1,5 +1,5 @@
 # junk
-This is just for my configs and other stuff that's too small to warrant its own thing.
+This is just for my configs and other things that are too small to warrant their own repositories.
 
 ## .vimrc
 ### pretend to be me
