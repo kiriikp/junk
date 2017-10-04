@@ -35,9 +35,9 @@ set nocompatible
 " --- BINDS-GENERAL
 	"  F5 to save the current file
 	map <F5> <Esc>:w<CR>
-	"  Move around lines visually
-	nnoremap j gj
-	nnoremap k gk
+	"  Always move around lines visually
+	"nnoremap j gj
+	"nnoremap k gk
 	"  Double tap j to enter command mode
 	inoremap jj <Esc>
 	
