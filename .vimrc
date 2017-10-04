@@ -13,17 +13,12 @@ set nocompatible
 	set showmatch
 	"  Line numbers
 	set number
-	"set relativenumber
-	"  Distance from top or bottom where scrolling starts
-	set so=12
-	
+	"set relativenumber	
 	"  Tab width, uncomment this stuff for 4-wide tabs
 	"set tabstop=4 
 	"set softtabstop=4
 	"set shiftwidth=4
-
-	"  Show last command entered
-	set showcmd
+	
 
 " --- USABILITY
 	"  Search as characters are entered and highlight matches
@@ -31,6 +26,10 @@ set nocompatible
 	set hlsearch
 	"  Don't redraw the screen during macros
 	set lazyredraw
+	"  Show last command entered
+	set showcmd
+	"  Distance from top or bottom where scrolling starts
+	set so=12
 
 
 " --- BINDS-GENERAL
