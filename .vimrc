@@ -61,9 +61,9 @@ set nocompatible
         autocmd Filetype c inoremap ;d #define<Space>
         autocmd Filetype c inoremap ;m main()<CR>{<CR>}<Esc>O
         " maybe I should have a version of these without braces
-        autocmd Filetype c inoremap ;if if<Space>()<Space>{<CR><++><CR>}<Space><++><Esc>2k$2hi
-        autocmd Filetype c inoremap ;wh while<Space>()<Space>{<CR><++><CR>}<Space><++><Esc>2k$2hi
-        autocmd Filetype c inoremap ;fo for<Space>()<Space>{<CR><++><CR>}<Space><++><Esc>2k$2hi
+        autocmd Filetype c inoremap ;if if<Space>()<Space>{<CR><++><CR>}<++><Esc>2k$2hi
+        autocmd Filetype c inoremap ;wh while<Space>()<Space>{<CR><++><CR>}<++><Esc>2k$2hi
+        autocmd Filetype c inoremap ;fo for<Space>()<Space>{<CR><++><CR>}<++><Esc>2k$2hi
         autocmd Filetype c inoremap ;/ /*<Space><Space>*/<Esc>2hi
 	
 " --- BINDS-HTML
