@@ -6,3 +6,8 @@ This is just for my configs and other things that are too small to warrant their
 
 some of the stuff in this (the stuff with the `<++>` marker and the html macros) is from Luke Smith  
 the rest is either mine or from random posts
+
+## i3 configs
+
+you may use them for desktop threads if you wish
+a lain wallpaper and .fehbg is provided
