@@ -3,7 +3,8 @@ set nocompatible
 " --- APPEARANCE
 	" Colours
 	set t_Co=256
-	colorscheme desert
+	" elflord, industry, murphy, slate seem nice
+	colorscheme torte
 	set cursorline
 	syntax enable 
 	filetype plugin indent on
@@ -33,8 +34,9 @@ set nocompatible
 
 
 " --- BINDS-GENERAL
-	"  F5 to save the current file
+	"  F5 to save the current file, double tap to save and quit
 	map <F5> <Esc>:w<CR>
+	map <F5><F5> <Esc>:wq<CR>
 	"  Always move around lines visually
 	"nnoremap j gj
 	"nnoremap k gk
@@ -53,6 +55,16 @@ set nocompatible
 	endif
 	"  Hit F6 in normal mode to turn off highlighting of last search
 	nnoremap <F6> :noh<return><Esc>
+
+" --- BINDS-C
+        autocmd Filetype c inoremap ;in <Esc>o#include<Space><><Esc>i
+        autocmd Filetype c inoremap ;de <Esc>o#define<Space>
+        autocmd Filetype c inoremap ;m main()<CR>{<CR>}<Esc>O
+        " maybe I should have a version of these without braces
+        autocmd Filetype c inoremap ;if if<Space>()<Space>{<CR><++><CR>}<Space><++><Esc>2k$2hi
+        autocmd Filetype c inoremap ;wh while<Space>()<Space>{<CR><++><CR>}<Esc>2k$2hi
+        autocmd Filetype c inoremap ;fo for<Space>()<Space>{<CR><++><CR>}<Esc>2k$2hi
+        autocmd Filetype c inoremap ;/ /*<Space><Space>*/<Esc>2hi
 	
 " --- BINDS-HTML
 	autocmd FileType html inoremap ;b <b></b><Space><++><Esc>FbT>i
