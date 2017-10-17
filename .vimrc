@@ -57,13 +57,13 @@ set nocompatible
 	nnoremap <F6> :noh<return><Esc>
 
 " --- BINDS-C
-        autocmd Filetype c inoremap ;in <Esc>o#include<Space><><Esc>i
-        autocmd Filetype c inoremap ;de <Esc>o#define<Space>
+        autocmd Filetype c inoremap ;i #include<Space><><Esc>i
+        autocmd Filetype c inoremap ;d #define<Space>
         autocmd Filetype c inoremap ;m main()<CR>{<CR>}<Esc>O
         " maybe I should have a version of these without braces
         autocmd Filetype c inoremap ;if if<Space>()<Space>{<CR><++><CR>}<Space><++><Esc>2k$2hi
-        autocmd Filetype c inoremap ;wh while<Space>()<Space>{<CR><++><CR>}<Esc>2k$2hi
-        autocmd Filetype c inoremap ;fo for<Space>()<Space>{<CR><++><CR>}<Esc>2k$2hi
+        autocmd Filetype c inoremap ;wh while<Space>()<Space>{<CR><++><CR>}<Space><++><Esc>2k$2hi
+        autocmd Filetype c inoremap ;fo for<Space>()<Space>{<CR><++><CR>}<Space><++><Esc>2k$2hi
         autocmd Filetype c inoremap ;/ /*<Space><Space>*/<Esc>2hi
 	
 " --- BINDS-HTML
