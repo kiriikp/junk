@@ -10,4 +10,4 @@ the rest is either mine or from random posts
 ## i3 configs
 
 you may use them for desktop threads if you wish  
-a lain wallpaper and .fehbg is provided
+a lain wallpaper is provided
