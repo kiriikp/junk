@@ -1,5 +1,5 @@
 # junk
-This is just for my configs and other things that are too small to warrant their own repositories.
+This is just for my configs and other things that are too small or too dumb to warrant their own repositories.
 
 ## pretend to be me
 
