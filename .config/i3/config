@@ -41,6 +41,10 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+# lock the screen
+# i have a lock script in ~/bin/, you may need to change this
+bindsym $mod+q exec ~/bin/lock
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
