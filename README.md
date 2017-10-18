@@ -12,3 +12,7 @@ the rest is either mine or from random posts
 
 you may use them for desktop threads if you wish  
 a lain wallpaper is provided
+
+## poor girl's database
+
+it's for work but I'll try and make it flexible
