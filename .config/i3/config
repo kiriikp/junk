@@ -43,8 +43,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 # lock the screen
 # i have a lock script in ~/bin/, you may need to change this
-bindsym $mod+q exec ~/bin/lock
-
+bindsym $mod+q exec i3lock --ignore-empty-password --color 000000 --no-unlock-indicator
 # kill focused window
 bindsym $mod+Shift+q kill
 
