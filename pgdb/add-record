@@ -4,7 +4,7 @@ if [ $1 ]; then
 	if [ -d $1 ]; then
 		cd $1;
 		../.new;
-		echo -e "#last_updated\n$(date)\n" >> info;
+		echo -e "#last_updated\n$(date -I)\n" >> info;
 		cd ..;
 	fi
 else
