@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ $1 ]; then
+	mkdir $1;
+	if [ -d $1 ]; then
+		cd $1;
+		../.new;
+		echo -e "#last_updated\n$(date)\n" >> info;
+		cd ..;
+	fi
+else
+	echo "you need to specify a folder name";
+fi

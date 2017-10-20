@@ -1,0 +1,68 @@
+#!/usr/bin/env perl
+use strict;
+# Creates a new contract
+# we need to ask for:
+# 	folder name
+# 	contract name
+# 	short description (1 line)
+# 	supplier
+# 	who owns the contract here
+# 	start date
+# 	end date
+# 	notes (possible multiline)
+#
+# also need to add the current date to the entry
+
+#folder name
+#print"Enter a folder name (alphanumeric characters and underscores only): ";
+#my$folder;
+#{
+#	chomp($folder=<STDIN>);
+#	if(!$folder=~/^\w+$/a) {
+#		print"Invalid name, choose another: ";
+#		redo
+#	}
+#	if(-f$folder) {
+#		print"Name exists as a file, choose another: ";
+#		redo
+#	} elsif(-d$folder) {
+#		print"Folder already exists, new entry will be appended\n"
+#	}
+#}
+
+#contract name
+print"Enter a name for the contract: ";
+chomp(my$name=<STDIN>);
+
+#supplier
+print"Enter a name for the supplier: ";
+chomp(my$supplier=<STDIN>);
+
+#owner
+print"Who owns the contract here? ";
+chomp(my$owner=<STDIN>);
+
+#start date
+print"Start date? (dd/mm/yy) ";
+chomp(my$start=<STDIN>);
+
+#end date
+print"End date? (dd/mm/yy) ";
+chomp(my$end=<STDIN>);
+
+#notes
+# to be implemented
+
+#adding
+# open INFO, ">>$folder/info";
+if(!open INFO, ">>info") {
+	die "Cannot write to this folder: $!";
+}
+
+print(INFO "###_NEW\n".
+	"#name\n$name\n".
+	"#supplier\n$supplier\n".
+	"#owner\n$owner\n".
+	"#start date\n$start\n".
+	"#end date\n$end\n"
+	);
