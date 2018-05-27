@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
+
 my($firstnames, $surnames) = ("data/first-names", "data/surnames");
 my(@firstnames, @surnames);
 
@@ -10,8 +11,10 @@ if(-T $firstnames && -T $surnames) {
 } else { 
 	die "Can't open namefiles: $!"
 }
+
 chomp(@firstnames=<FIRSTNAMES>);
 chomp(@surnames=<SURNAMES>);
+
 
 #picks a random element from an array
 sub pick {
@@ -21,6 +24,9 @@ sub pick {
 sub gen_name {
 	return(&pick(@firstnames), &pick(@surnames))
 }
+
+
+#testing
 for(1..10){
 	my@test=&gen_name;
 	print"@test\n"
